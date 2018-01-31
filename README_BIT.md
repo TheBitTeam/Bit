@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Bitcoin 2.0 Core integration/staging tree
 =====================================
 
@@ -34,3 +35,6 @@ Then run src/qt/bit-qt, hide synchronization window, click Help > Debug window >
 Same commands as Litecoin 0.14 , i.e. generate 10 mines 10 blocks, getmininginfo shows current block info, etc.
 
 Click receive and send to see addresses for receiving and sending, same as Litecoin UI.
+=======
+# Bit
+>>>>>>> 735a6b519f89fa2b948e32d92c58e987f3baa9af
