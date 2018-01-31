@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-transaction_tests.o: test/transaction_tests.cpp \
+test/test_test_bit-transaction_tests.o: test/transaction_tests.cpp \
   test/data/tx_invalid.json.h test/data/tx_valid.json.h \
   test/test_bitcoin.h chainparamsbase.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory \

@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin2 address</source>
-        <translation>Enviando monedas a una dirección de Bitcoin2</translation>
+        <source>Send coins to a Bit address</source>
+        <translation>Enviando monedas a una dirección de Bit</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>Bitcoin2</source>
-        <translation>Bitcoin2</translation>
+        <source>Bit</source>
+        <translation>Bit</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -296,8 +296,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin2 Core</source>
-        <translation>Bitcoin2 Core</translation>
+        <source>Bit Core</source>
+        <translation>Bit Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

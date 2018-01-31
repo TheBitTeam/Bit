@@ -1,4 +1,4 @@
-bench/bench_bench_bitcoin2-bench.o: bench/bench.cpp bench/bench.h \
+bench/bench_bench_bit-bench.o: bench/bench.cpp bench/bench.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits \

@@ -1,4 +1,4 @@
-qt/qt_bitcoin2_qt-macdockiconhandler.o: qt/macdockiconhandler.mm \
+qt/qt_bit_qt-macdockiconhandler.o: qt/macdockiconhandler.mm \
   qt/macdockiconhandler.h \
   /usr/local/Cellar/qt/5.10.0_1/include/QtWidgets/QMainWindow \
   /usr/local/Cellar/qt/5.10.0_1/include/QtWidgets/qmainwindow.h \

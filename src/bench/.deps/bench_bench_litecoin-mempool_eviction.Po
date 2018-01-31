@@ -1,4 +1,4 @@
-bench/bench_bench_bitcoin2-mempool_eviction.o: bench/mempool_eviction.cpp \
+bench/bench_bench_bit-mempool_eviction.o: bench/mempool_eviction.cpp \
   bench/bench.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Bitcoin2</source>
+        <source>Bit</source>
         <translation>Биткоин</translation>
     </message>
     <message>

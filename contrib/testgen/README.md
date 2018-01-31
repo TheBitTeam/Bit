@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Bitcoin2 tests.
+Utilities to generate test vectors for the data-driven Bit tests.
 
 Usage: 
 

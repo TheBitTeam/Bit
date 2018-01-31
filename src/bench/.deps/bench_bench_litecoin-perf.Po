@@ -1,4 +1,4 @@
-bench/bench_bench_bitcoin2-perf.o: bench/perf.cpp bench/perf.h \
+bench/bench_bench_bit-perf.o: bench/perf.cpp bench/perf.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include/stdint.h \

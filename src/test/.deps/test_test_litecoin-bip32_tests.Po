@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-bip32_tests.o: test/bip32_tests.cpp \
+test/test_test_bit-bip32_tests.o: test/bip32_tests.cpp \
   /opt/local/include/boost/test/unit_test.hpp \
   /opt/local/include/boost/test/test_tools.hpp \
   /opt/local/include/boost/config.hpp \

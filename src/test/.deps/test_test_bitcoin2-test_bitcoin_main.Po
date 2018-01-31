@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-test_bitcoin_main.o: test/test_bitcoin_main.cpp \
+test/test_test_bit-test_bitcoin_main.o: test/test_bitcoin_main.cpp \
   net.h addrdb.h fs.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

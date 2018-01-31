@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-random_tests.o: test/random_tests.cpp random.h \
+test/test_test_bit-random_tests.o: test/random_tests.cpp random.h \
   crypto/chacha20.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

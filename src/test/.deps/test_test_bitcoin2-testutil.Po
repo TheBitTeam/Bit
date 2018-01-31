@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-testutil.o: test/testutil.cpp test/testutil.h \
+test/test_test_bit-testutil.o: test/testutil.cpp test/testutil.h \
   fs.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

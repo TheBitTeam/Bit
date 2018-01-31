@@ -1,7 +1,7 @@
-Contributing to Bitcoin2 Core
+Contributing to Bit Core
 ============================
 
-The Bitcoin2 Core project operates an open contributor model where anyone is
+The Bit Core project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -157,10 +157,10 @@ where possible keep them short, uncomplex and easy to verify.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the Bitcoin2 Core project, and is not to be confused with overall Bitcoin2
+The following applies to code changes to the Bit Core project, and is not to be confused with overall Bit
 Network Protocol consensus changes.
 
-Whether a pull request is merged into Bitcoin2 Core rests with the project merge
+Whether a pull request is merged into Bit Core rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -178,7 +178,7 @@ In general, all pull requests must:
   - Where bugs are fixed, where possible, there should be unit tests
     demonstrating the bug and also proving the fix. This helps prevent regression.
 
-Patches that change Bitcoin2 consensus rules are considerably more involved than
+Patches that change Bit consensus rules are considerably more involved than
 normal because they affect the entire ecosystem and so must be preceded by
 extensive mailing list discussions and have a numbered BIP. While each case will
 be different, one should be prepared to expend more time and effort than for
@@ -219,7 +219,7 @@ higher in terms of discussion and peer review requirements, keeping in mind that
 mistakes could be very costly to the wider community. This includes refactoring
 of consensus critical code.
 
-Where a patch set proposes to change the Bitcoin2 consensus, it must have been
+Where a patch set proposes to change the Bit consensus, it must have been
 discussed extensively on the mailing list and IRC, be accompanied by a widely
 discussed BIP and have a generally widely perceived technical consensus of being
 a worthwhile change based on the judgement of the maintainers.
@@ -259,11 +259,11 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each Bitcoin2 Core release.
+The project leader is the release manager for each Bit Core release.
 
 Copyright
 ---------
-Copyright 2017 The Bitcoin2 Core Developers
+Copyright 2017 The Bit Core Developers
 
 - bitcoin: Copyright (c) 2009-2017 Bitcoin Core Developers (MIT License)
 

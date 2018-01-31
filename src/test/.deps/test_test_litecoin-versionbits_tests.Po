@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-versionbits_tests.o: test/versionbits_tests.cpp \
+test/test_test_bit-versionbits_tests.o: test/versionbits_tests.cpp \
   chain.h arith_uint256.h /usr/include/assert.h /usr/include/sys/cdefs.h \
   /usr/include/sys/_symbol_aliasing.h \
   /usr/include/sys/_posix_availability.h \

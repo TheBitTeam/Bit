@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-scriptnum_tests.o: test/scriptnum_tests.cpp \
+test/test_test_bit-scriptnum_tests.o: test/scriptnum_tests.cpp \
   test/scriptnum10.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

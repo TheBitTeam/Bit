@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #
-# Test new Bitcoin2 multisig prefix functionality.
+# Test new Bit multisig prefix functionality.
 #
 
 from test_framework.test_framework import BitcoinTestFramework

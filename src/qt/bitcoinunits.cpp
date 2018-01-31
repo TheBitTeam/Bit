@@ -51,7 +51,7 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Bitcoin2s");
+    case BTC: return QString("Bits");
     case mBTC: return QString("Satoshis (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Bits (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");

@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-pow_tests.o: test/pow_tests.cpp chain.h \
+test/test_test_bit-pow_tests.o: test/pow_tests.cpp chain.h \
   arith_uint256.h /usr/include/assert.h /usr/include/sys/cdefs.h \
   /usr/include/sys/_symbol_aliasing.h \
   /usr/include/sys/_posix_availability.h \

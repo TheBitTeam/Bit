@@ -114,8 +114,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin2 address</source>
-        <translation>Enviar monedas a una dirección Bitcoin2</translation>
+        <source>Send coins to a Bit address</source>
+        <translation>Enviar monedas a una dirección Bit</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -130,8 +130,8 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Bitcoin2</source>
-        <translation>Bitcoin2</translation>
+        <source>Bit</source>
+        <translation>Bit</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -158,12 +158,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin2 addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Bitcoin2 para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your Bit addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones Bit para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin2 addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Bitcoin2 especificas</translation>
+        <source>Verify messages to ensure they were signed with specified Bit addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Bit especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -608,8 +608,8 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
-        <source>Bitcoin2 Core</source>
-        <translation>Bitcoin2 Core</translation>
+        <source>Bit Core</source>
+        <translation>Bit Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

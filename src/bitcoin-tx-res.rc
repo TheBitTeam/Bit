@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bitcoin2"
-            VALUE "FileDescription",    "Bitcoin2-tx (CLI Bitcoin2 transaction editor utility)"
+            VALUE "CompanyName",        "Bit"
+            VALUE "FileDescription",    "Bit-tx (CLI Bit transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "Bitcoin2-tx"
+            VALUE "InternalName",       "Bit-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "Bitcoin2-tx.exe"
-            VALUE "ProductName",        "Bitcoin2-tx"
+            VALUE "OriginalFilename",   "Bit-tx.exe"
+            VALUE "ProductName",        "Bit-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

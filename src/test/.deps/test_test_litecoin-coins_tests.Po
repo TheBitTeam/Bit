@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-coins_tests.o: test/coins_tests.cpp coins.h \
+test/test_test_bit-coins_tests.o: test/coins_tests.cpp coins.h \
   primitives/transaction.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

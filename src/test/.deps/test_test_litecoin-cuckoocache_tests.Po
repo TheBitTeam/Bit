@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-cuckoocache_tests.o: test/cuckoocache_tests.cpp \
+test/test_test_bit-cuckoocache_tests.o: test/cuckoocache_tests.cpp \
   /opt/local/include/boost/test/unit_test.hpp \
   /opt/local/include/boost/test/test_tools.hpp \
   /opt/local/include/boost/config.hpp \

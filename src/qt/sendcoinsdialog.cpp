@@ -785,7 +785,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Bitcoin2 address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Bit address"));
         }
         else // Valid address
         {

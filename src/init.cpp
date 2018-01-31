@@ -525,8 +525,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/bitcoin2-project/bitcoin2>";
-    const std::string URL_WEBSITE = "<https://bitcoin2.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/bit-project/bit>";
+    const std::string URL_WEBSITE = "<https://bit.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -815,7 +815,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Bitcoin2 version %s\n", FormatFullVersion());
+    LogPrintf("Bit version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

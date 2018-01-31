@@ -14,8 +14,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Bitcoin2</source>
-        <translation>Bitcoin2</translation>
+        <source>Bit</source>
+        <translation>Bit</translation>
     </message>
     </context>
 <context>
@@ -156,8 +156,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bitcoin2 Core</source>
-        <translation>Bitcoin2 Jezrga</translation>
+        <source>Bit Core</source>
+        <translation>Bit Jezrga</translation>
     </message>
     </context>
 </TS>

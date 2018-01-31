@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-main_tests.o: test/main_tests.cpp chainparams.h \
+test/test_test_bit-main_tests.o: test/main_tests.cpp chainparams.h \
   chainparamsbase.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

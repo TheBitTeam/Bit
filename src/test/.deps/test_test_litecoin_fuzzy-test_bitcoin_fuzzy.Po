@@ -1,4 +1,4 @@
-test/test_test_bitcoin2_fuzzy-test_bitcoin_fuzzy.o: \
+test/test_test_bit_fuzzy-test_bitcoin_fuzzy.o: \
   test/test_bitcoin_fuzzy.cpp config/bitcoin-config.h consensus/merkle.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

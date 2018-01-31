@@ -1,41 +1,41 @@
-Bitcoin2 Core
+Bit Core
 =============
 
 Setup
 ---------------------
-Bitcoin2 Core is the original Bitcoin2 client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Bitcoin2 transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Bit Core is the original Bit client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Bit transactions (which is currently more than 7 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Bitcoin2 Core, visit [Bitcoin2.org](https://Bitcoin2.org).
+To download Bit Core, visit [Bit.org](https://Bit.org).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Bitcoin2 on your native platform.
+The following are some helpful notes on how to run Bit on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/Bitcoin2-qt` (GUI) or
-- `bin/Bitcoin2d` (headless)
+- `bin/Bit-qt` (GUI) or
+- `bin/Bitd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run Bitcoin2-qt.exe.
+Unpack the files into a directory, and then run Bit-qt.exe.
 
 ### OS X
 
-Drag Bitcoin2-Core to your applications folder, and then run Bitcoin2-Core.
+Drag Bit-Core to your applications folder, and then run Bit-Core.
 
 ### Need Help?
 
-* See the documentation at the [Bitcoin2 Wiki](https://Bitcoin2.info/)
+* See the documentation at the [Bit Wiki](https://Bit.info/)
 for help and more information.
-* Ask for help on [#Bitcoin2](http://webchat.freenode.net?channels=Bitcoin2) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=Bitcoin2).
-* Ask for help on the [Bitcoin2Talk](https://Bitcoin2talk.io/) forums.
+* Ask for help on [#Bit](http://webchat.freenode.net?channels=Bit) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=Bit).
+* Ask for help on the [BitTalk](https://Bittalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Bitcoin2 on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Bit on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,12 +45,12 @@ The following are developer notes on how to build Bitcoin2 on your native platfo
 
 Development
 ---------------------
-The Bitcoin2 repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Bit repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/Bitcoin2/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/Bit/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -61,8 +61,8 @@ The Bitcoin2 repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Bitcoin2Talk](https://Bitcoin2talk.io/) forums.
-* Discuss general Bitcoin2 development on #Bitcoin2-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=Bitcoin2-dev).
+* Discuss on the [BitTalk](https://Bittalk.io/) forums.
+* Discuss general Bit development on #Bit-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=Bit-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

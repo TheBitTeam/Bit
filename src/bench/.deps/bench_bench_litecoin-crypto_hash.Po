@@ -1,4 +1,4 @@
-bench/bench_bench_bitcoin2-crypto_hash.o: bench/crypto_hash.cpp \
+bench/bench_bench_bit-crypto_hash.o: bench/crypto_hash.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios \

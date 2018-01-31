@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-timedata_tests.o: test/timedata_tests.cpp \
+test/test_test_bit-timedata_tests.o: test/timedata_tests.cpp \
   timedata.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

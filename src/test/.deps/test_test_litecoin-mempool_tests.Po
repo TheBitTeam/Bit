@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-mempool_tests.o: test/mempool_tests.cpp \
+test/test_test_bit-mempool_tests.o: test/mempool_tests.cpp \
   policy/policy.h consensus/consensus.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

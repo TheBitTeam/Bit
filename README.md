@@ -15,7 +15,7 @@ software which enables the use of this currency. Bitcoin 2.0 is based on the inf
 License
 -------
 
-Bitcoin2 Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Bit Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Installation Process
@@ -24,12 +24,12 @@ Installation Process
 Installation of Bitcoin 2.0 requires following the corresponding "build" text at
 https://github.com/litecoin-project/litecoin/tree/master/doc
 
-After the build is done compiling, go into -datadir (./Bitcoin2) and create a text file bitcoin2.conf containing the line:
+After the build is done compiling, go into -datadir (./Bit) and create a text file bit.conf containing the line:
 
 addnode=24.90.16.52:30333
 
 
-Then run src/qt/bitcoin2-qt, hide synchronization window, click Help > Debug window > Console and begin mining :)
+Then run src/qt/bit-qt, hide synchronization window, click Help > Debug window > Console and begin mining :)
 
 Same commands as Litecoin 0.14 , i.e. generate 10 mines 10 blocks, getmininginfo shows current block info, etc.
 

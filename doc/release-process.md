@@ -5,7 +5,7 @@ Before every release candidate:
 
 * Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/Bitcoin2-project/Bitcoin2/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/Bit-project/Bit/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -33,12 +33,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/Bitcoin2-project/gitian.sigs.BCT.git
-    git clone https://github.com/Bitcoin2-project/Bitcoin2-detached-sigs.git
+    git clone https://github.com/Bit-project/gitian.sigs.BCT.git
+    git clone https://github.com/Bit-project/Bit-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/Bitcoin2-project/Bitcoin2.git
+    git clone https://github.com/Bit-project/Bit.git
 
-### Bitcoin2 maintainers/release engineers, suggestion for writing release notes
+### Bit maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -61,7 +61,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./Bitcoin2
+    pushd ./Bit
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -95,7 +95,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../Bitcoin2/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../Bit/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -103,50 +103,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url Bitcoin2=/path/to/Bitcoin2,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url Bit=/path/to/Bit,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Bitcoin2 Core for Linux, Windows, and OS X:
+### Build and sign Bit Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit Bitcoin2=v${VERSION} ../Bitcoin2/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.BCT/ ../Bitcoin2/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/Bitcoin2-*.tar.gz build/out/src/Bitcoin2-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit Bit=v${VERSION} ../Bit/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.BCT/ ../Bit/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/Bit-*.tar.gz build/out/src/Bit-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit Bitcoin2=v${VERSION} ../Bitcoin2/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.BCT/ ../Bitcoin2/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/Bitcoin2-*-win-unsigned.tar.gz inputs/Bitcoin2-win-unsigned.tar.gz
-    mv build/out/Bitcoin2-*.zip build/out/Bitcoin2-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit Bit=v${VERSION} ../Bit/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.BCT/ ../Bit/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/Bit-*-win-unsigned.tar.gz inputs/Bit-win-unsigned.tar.gz
+    mv build/out/Bit-*.zip build/out/Bit-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit Bitcoin2=v${VERSION} ../Bitcoin2/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.BCT/ ../Bitcoin2/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/Bitcoin2-*-osx-unsigned.tar.gz inputs/Bitcoin2-osx-unsigned.tar.gz
-    mv build/out/Bitcoin2-*.tar.gz build/out/Bitcoin2-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit Bit=v${VERSION} ../Bit/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.BCT/ ../Bit/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/Bit-*-osx-unsigned.tar.gz inputs/Bit-osx-unsigned.tar.gz
+    mv build/out/Bit-*.tar.gz build/out/Bit-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`Bitcoin2-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`Bitcoin2-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`Bitcoin2-${VERSION}-win[32|64]-setup-unsigned.exe`, `Bitcoin2-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`Bitcoin2-${VERSION}-osx-unsigned.dmg`, `Bitcoin2-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`Bit-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`Bit-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`Bit-${VERSION}-win[32|64]-setup-unsigned.exe`, `Bit-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`Bit-${VERSION}-osx-unsigned.dmg`, `Bit-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs.BCT/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import Bitcoin2/contrib/gitian-keys/*.pgp
+    gpg --import Bit/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-linux ../Bitcoin2/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-win-unsigned ../Bitcoin2/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-osx-unsigned ../Bitcoin2/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-linux ../Bit/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-win-unsigned ../Bit/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-osx-unsigned ../Bit/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -167,22 +167,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer Bitcoin2-osx-unsigned.tar.gz to osx for signing
-    tar xf Bitcoin2-osx-unsigned.tar.gz
+    transfer Bit-osx-unsigned.tar.gz to osx for signing
+    tar xf Bit-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf Bitcoin2-win-unsigned.tar.gz
+    tar xf Bit-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/Bitcoin2-detached-sigs
+    cd ~/Bit-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -195,25 +195,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [Bitcoin2-detached-sigs](https://github.com/Bitcoin2-project/Bitcoin2-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [Bit-detached-sigs](https://github.com/Bit-project/Bit-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../Bitcoin2/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.BCT/ ../Bitcoin2/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-osx-signed ../Bitcoin2/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/Bitcoin2-osx-signed.dmg ../Bitcoin2-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../Bit/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.BCT/ ../Bit/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-osx-signed ../Bit/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/Bit-osx-signed.dmg ../Bit-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../Bitcoin2/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.BCT/ ../Bitcoin2/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-win-signed ../Bitcoin2/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/Bitcoin2-*win64-setup.exe ../Bitcoin2-${VERSION}-win64-setup.exe
-    mv build/out/Bitcoin2-*win32-setup.exe ../Bitcoin2-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../Bit/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.BCT/ ../Bit/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.BCT/ -r ${VERSION}-win-signed ../Bit/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/Bit-*win64-setup.exe ../Bit-${VERSION}-win64-setup.exe
+    mv build/out/Bit-*win32-setup.exe ../Bit-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -235,23 +235,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-Bitcoin2-${VERSION}-aarch64-linux-gnu.tar.gz
-Bitcoin2-${VERSION}-arm-linux-gnueabihf.tar.gz
-Bitcoin2-${VERSION}-i686-pc-linux-gnu.tar.gz
-Bitcoin2-${VERSION}-x86_64-linux-gnu.tar.gz
-Bitcoin2-${VERSION}-osx64.tar.gz
-Bitcoin2-${VERSION}-osx.dmg
-Bitcoin2-${VERSION}.tar.gz
-Bitcoin2-${VERSION}-win32-setup.exe
-Bitcoin2-${VERSION}-win32.zip
-Bitcoin2-${VERSION}-win64-setup.exe
-Bitcoin2-${VERSION}-win64.zip
+Bit-${VERSION}-aarch64-linux-gnu.tar.gz
+Bit-${VERSION}-arm-linux-gnueabihf.tar.gz
+Bit-${VERSION}-i686-pc-linux-gnu.tar.gz
+Bit-${VERSION}-x86_64-linux-gnu.tar.gz
+Bit-${VERSION}-osx64.tar.gz
+Bit-${VERSION}-osx.dmg
+Bit-${VERSION}.tar.gz
+Bit-${VERSION}-win32-setup.exe
+Bit-${VERSION}-win32.zip
+Bit-${VERSION}-win64-setup.exe
+Bit-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the Bitcoin2.org server, nor put them in the torrent*.
+space *do not upload these to the Bit.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,24 +261,24 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the Bitcoin2.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the Bit.org server.
 
 ```
 
-- Update Bitcoin2.org version
+- Update Bit.org version
 
 - Announce the release:
 
-  - Bitcoin2-dev and Bitcoin2-dev mailing list
+  - Bit-dev and Bit-dev mailing list
 
-  - blog.Bitcoin2.org blog post
+  - blog.Bit.org blog post
 
-  - Update title of #Bitcoin2 and #Bitcoin2-dev on Freenode IRC
+  - Update title of #Bit and #Bit-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Bitcoin2, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Bit, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/Bitcoin2-project/Bitcoin2/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/Bit-project/Bit/releases/new) with a link to the archived release notes.
 
   - Celebrate

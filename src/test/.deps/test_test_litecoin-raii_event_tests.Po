@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-raii_event_tests.o: test/raii_event_tests.cpp \
+test/test_test_bit-raii_event_tests.o: test/raii_event_tests.cpp \
   /usr/local/Cellar/libevent/2.1.8/include/event2/event.h \
   /usr/local/Cellar/libevent/2.1.8/include/event2/visibility.h \
   /usr/local/Cellar/libevent/2.1.8/include/event2/event-config.h \

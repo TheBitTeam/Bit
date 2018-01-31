@@ -3,7 +3,7 @@ exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
-Name: Bitcoin2 Core consensus library
+Name: Bit Core consensus library
 Description: Library for the Bitcoin consensus protocol.
 Version: 1.0.0
 Libs: -L${libdir} -lbitcoinconsensus

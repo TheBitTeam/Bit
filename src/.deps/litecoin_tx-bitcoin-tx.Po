@@ -1,4 +1,4 @@
-bitcoin2_tx-bitcoin-tx.o: bitcoin-tx.cpp config/bitcoin-config.h base58.h \
+bit_tx-bitcoin-tx.o: bitcoin-tx.cpp config/bitcoin-config.h base58.h \
   chainparams.h chainparamsbase.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

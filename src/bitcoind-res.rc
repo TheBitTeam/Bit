@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bitcoin2"
-            VALUE "FileDescription",    "Bitcoin2d (Bitcoin2 node with a JSON-RPC server)"
+            VALUE "CompanyName",        "Bit"
+            VALUE "FileDescription",    "Bitd (Bit node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "Bitcoin2d"
+            VALUE "InternalName",       "Bitd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "Bitcoin2d.exe"
-            VALUE "ProductName",        "Bitcoin2d"
+            VALUE "OriginalFilename",   "Bitd.exe"
+            VALUE "ProductName",        "Bitd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

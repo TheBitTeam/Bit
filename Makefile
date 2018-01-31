@@ -75,10 +75,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/bitcoin2
-pkgincludedir = $(includedir)/bitcoin2
-pkglibdir = $(libdir)/bitcoin2
-pkglibexecdir = $(libexecdir)/bitcoin2
+pkgdatadir = $(datadir)/bit
+pkgincludedir = $(includedir)/bit
+pkglibdir = $(libdir)/bit
+pkglibexecdir = $(libexecdir)/bit
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -278,22 +278,22 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /Users/LitGucciLuci/Desktop/Bitcoin2/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = /usr/bin/ar
 ARFLAGS = cr
-AUTOCONF = ${SHELL} /Users/LitGucciLuci/Desktop/Bitcoin2/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /Users/LitGucciLuci/Desktop/Bitcoin2/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /Users/LitGucciLuci/Desktop/Bitcoin2/build-aux/missing automake-1.15
+AUTOCONF = ${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" autoconf
+AUTOHEADER = ${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" autoheader
+AUTOMAKE = ${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" automake-1.15
 AWK = awk
 BDB_CFLAGS = 
 BDB_CPPFLAGS =  -I/opt/local/include/db48/
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = bitcoin2-cli
-BITCOIN_DAEMON_NAME = bitcoin2d
-BITCOIN_GUI_NAME = bitcoin2-qt
-BITCOIN_TX_NAME = bitcoin2-tx
+BITCOIN_CLI_NAME = bit-cli
+BITCOIN_DAEMON_NAME = bitd
+BITCOIN_GUI_NAME = bit-qt
+BITCOIN_TX_NAME = bit-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt
 BOOST_CPPFLAGS = -DBOOST_SP_USE_STD_ATOMIC -DBOOST_AC_USE_STD_ATOMIC -pthread -I/usr/local/include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem
@@ -314,8 +314,8 @@ CLIENT_VERSION_MAJOR = 1
 CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
 COPYRIGHT_HOLDERS = The %s developers
-COPYRIGHT_HOLDERS_FINAL = The Bitcoin2 Core developers
-COPYRIGHT_HOLDERS_SUBSTITUTION = Bitcoin2 Core
+COPYRIGHT_HOLDERS_FINAL = The Bit Core developers
+COPYRIGHT_HOLDERS_SUBSTITUTION = Bit Core
 COPYRIGHT_YEAR = 2017
 CPP = gcc -E
 CPPFILT = /usr/bin/c++filt
@@ -380,7 +380,7 @@ LTLIBOBJS =
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = /usr/local/Cellar/qt/5.10.0_1/bin/lupdate
 MAINT = 
-MAKEINFO = ${SHELL} /Users/LitGucciLuci/Desktop/Bitcoin2/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
@@ -398,12 +398,12 @@ OBJDUMP = objdump
 OBJEXT = o
 OTOOL = otool
 OTOOL64 = :
-PACKAGE = bitcoin2
-PACKAGE_BUGREPORT = https://github.com/bitcoin2-project/bitcoin2/issues
-PACKAGE_NAME = Bitcoin2 Core
-PACKAGE_STRING = Bitcoin2 Core 1.0.0
-PACKAGE_TARNAME = bitcoin2
-PACKAGE_URL = https://bitcoin2.org/
+PACKAGE = bit
+PACKAGE_BUGREPORT = https://github.com/bit-project/bit/issues
+PACKAGE_NAME = Bit Core
+PACKAGE_STRING = Bit Core 1.0.0
+PACKAGE_TARNAME = bit
+PACKAGE_URL = https://bit.org/
 PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
@@ -472,10 +472,10 @@ X11XCB_LIBS =
 XGETTEXT = /opt/local/bin/xgettext
 ZMQ_CFLAGS = 
 ZMQ_LIBS = 
-abs_builddir = /Users/LitGucciLuci/Desktop/Bitcoin2
-abs_srcdir = /Users/LitGucciLuci/Desktop/Bitcoin2
-abs_top_builddir = /Users/LitGucciLuci/Desktop/Bitcoin2
-abs_top_srcdir = /Users/LitGucciLuci/Desktop/Bitcoin2
+abs_builddir = /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source
+abs_srcdir = /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source
+abs_top_builddir = /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source
+abs_top_srcdir = /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_CXX = g++
@@ -507,7 +507,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /Users/LitGucciLuci/Desktop/Bitcoin2/build-aux/install-sh
+install_sh = ${SHELL} '/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/install-sh'
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -539,7 +539,7 @@ BITCOIN_CLI_BIN = $(top_builddir)/src/$(BITCOIN_CLI_NAME)$(EXEEXT)
 BITCOIN_WIN_INSTALLER = $(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 empty := 
 space := $(empty) $(empty)
-OSX_APP = Bitcoin2-Qt.app
+OSX_APP = Bit-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_BACKGROUND_SVG = background.svg
@@ -579,7 +579,7 @@ COVERAGE_INFO = baseline.info \
 
 OSX_APP_BUILT = $(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/Bitcoin2-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
+  $(OSX_APP)/Contents/MacOS/Bit-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 #APP_DIST_DIR = $(top_builddir)/dist
 #APP_DIST_EXTRAS = $(APP_DIST_DIR)/.background/$(OSX_BACKGROUND_IMAGE) $(APP_DIST_DIR)/.DS_Store $(APP_DIST_DIR)/Applications
@@ -1189,7 +1189,7 @@ $(OSX_APP)/Contents/Resources/bitcoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/Bitcoin2-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/Bit-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
@@ -1216,7 +1216,7 @@ deploydir: $(OSX_DMG)
 #	@rm -f $@
 #	@cd $(@D); $(LN_S) /Applications $(@F)
 
-#$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Bitcoin2-Qt
+#$(APP_DIST_EXTRAS): $(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Bit-Qt
 
 #$(OSX_DMG): $(APP_DIST_EXTRAS)
 #	$(GENISOIMAGE) -no-cache-inodes -D -l -probe -V "$(OSX_VOLNAME)" -no-pad -r -dir-mode 0755 -apple -o $@ dist
@@ -1230,7 +1230,7 @@ deploydir: $(OSX_DMG)
 #$(APP_DIST_DIR)/.DS_Store: $(OSX_DSSTORE_GEN)
 #	$(PYTHON) $< "$@" "$(OSX_VOLNAME)"
 
-#$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Bitcoin2-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
+#$(APP_DIST_DIR)/$(OSX_APP)/Contents/MacOS/Bit-Qt: $(OSX_APP_BUILT) $(OSX_PACKAGING)
 #	INSTALLNAMETOOL=$(INSTALLNAMETOOL)  OTOOL=$(OTOOL) STRIP=$(STRIP) $(PYTHON) $(OSX_DEPLOY_SCRIPT) $(OSX_APP) -translations-dir=$(QT_TRANSLATION_DIR) -add-qt-tr $(OSX_QT_TRANSLATIONS) -verbose 2
 
 #deploydir: $(APP_DIST_EXTRAS)

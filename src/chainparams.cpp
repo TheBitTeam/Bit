@@ -26,16 +26,16 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
     CBlock genesis;
     genesis.nTime    = nTime;
-    genesis.nTime    = 1515510596;
+    genesis.nTime    = 1517349586;
     genesis.nBits    = nBits;
     genesis.nNonce   = nNonce;    
-    genesis.nNonce   = 1616186;
+    genesis.nNonce   = 508020;
     genesis.nVersion = nVersion;
     genesis.vtx.push_back(MakeTransactionRef(std::move(txNew)));
     genesis.hashPrevBlock.SetNull();
     genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
-   // printf("block.nTime = %u \n", genesis.nTime);
-   // printf("block.nNonce = %u \n", genesis.nNonce);
+    printf("block.nTime = %u \n", genesis.nTime);
+    printf("block.nNonce = %u \n", genesis.nNonce);
     printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
     return genesis;
 
@@ -56,7 +56,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "A blizzard that didn't quite happen, January 8, 2018";
+    const char* pszTimestamp = "Amazon, Berkshire Hathaway and JPMorgan Team Up to Disrupt Health Care - Jan 30 2018";
     const CScript genesisOutputScript = CScript() << ParseHex("040183310fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -126,19 +126,19 @@ public:
         nDefaultPort = 30333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1515510596, 0, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1517349586, 508020, 0x1e0ffff0, 1, 50 * COIN);
 // you already know what this is about custom code until next comment
 
-        vSeeds.emplace_back("18.220.75.6", true);
+     //   vSeeds.emplace_back("18.220.75.6", true);
 
         
 
         consensus.hashGenesisBlock = genesis.GetHash();
-     //   printf("block.nTime = %u \n", genesis.nTime);
-       // printf("block.nNonce = %u \n", genesis.nNonce);
+    //    printf("block.nTime = %u \n", genesis.nTime);
+     //   printf("block.nNonce = %u \n", genesis.nNonce);
         printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        assert(consensus.hashGenesisBlock == uint256S("0x48018f14d6c0e8b65a9da05295f5f66371c27216fa6e34046660895af928d412"));
-        assert(genesis.hashMerkleRoot == uint256S("0xbafb2ed31af00e365d5f1b4f12853ad2cadf887ba384df9d30ff5702f5c4e14e"));
+        assert(consensus.hashGenesisBlock == uint256S("0xa675daf66a47e5b0e29d946f94e665f9f75a895622e0211772785fce74d52322"));
+        assert(genesis.hashMerkleRoot == uint256S("0x2384bee07171436de6fc89e944dccc31d94c9fb7fd459e05eb3ce646e4dac927"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         
@@ -158,17 +158,18 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0x48018f14d6c0e8b65a9da05295f5f66371c27216fa6e34046660895af928d412")},
-                {1, uint256S("0x696f37df80495ac7b9879ffedd76def56b8059f29c15eec3d2e274a27c007f02")},
-                {2, uint256S("0x33eff54c8fe0122550c7026d74e941cac61d2b5f2da63aac80c062ec9d9bcf99")},
+                {0, uint256S("0xa6a212c6f905f89f07072de3b01bf83f8442ea06387d35a1aee61b8a21297965")},
+                {1, uint256S("0x66665c474577a79bc41db0d21a33f83230496e955d6c7e0fc2af87353b7594f7")},
+             //   {2, uint256S("0x2affd5188cc2c3d037d82b20b6a24557bcde03730b3b976fe2baa54c10e90cc1")},
+              //  {3, uint256S("0x2462f53ef5053457e7800a579e25c223254afe5bd008e83852a41d3e46dfe590")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
-            1515956632, // * UNIX timestamp of last known number of transactions
-            2,  // * total number of transactions between genesis and that timestamp
-                    //   (the tx=... number in the SetBestChain debug.log lines)
+            1517308890, // * UNIX timestamp of last known number of transactions
+            3,  // * total number of transactions between genesis and that timestamp
+           //         //   (the tx=... number in the SetBestChain debug.log lines)
             0.06     // * estimated number of transactions per second after that timestamp
         };
     }
@@ -220,21 +221,20 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1515510596, 0, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1517349586, 508020, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
      //   printf("block.nTime = %u \n", genesis.nTime);
       //  printf("block.nNonce = %u \n", genesis.nNonce);
       //  printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());        
-        assert(consensus.hashGenesisBlock == uint256S("0x48018f14d6c0e8b65a9da05295f5f66371c27216fa6e34046660895af928d412"));
-          
-        assert(genesis.hashMerkleRoot == uint256S("0xbafb2ed31af00e365d5f1b4f12853ad2cadf887ba384df9d30ff5702f5c4e14e"));
+        assert(consensus.hashGenesisBlock == uint256S("0xa675daf66a47e5b0e29d946f94e665f9f75a895622e0211772785fce74d52322"));
+        assert(genesis.hashMerkleRoot == uint256S("0x2384bee07171436de6fc89e944dccc31d94c9fb7fd459e05eb3ce646e4dac927"));
         //assert(genesis.hashMerkleRoot == uint256S("0x"));
        // vFixedSeeds.clear();
         //vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.bitcoin2tools.com", true);
-        vSeeds.emplace_back("seed-b.bitcoin2.loshan.co.uk", true);
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
+      //  vSeeds.emplace_back("testnet-seed.bittools.com", true);
+       // vSeeds.emplace_back("seed-b.bit.loshan.co.uk", true);
+        //vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -251,17 +251,20 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0x48018f14d6c0e8b65a9da05295f5f66371c27216fa6e34046660895af928d412")},
+                {0, uint256S("0xa6a212c6f905f89f07072de3b01bf83f8442ea06387d35a1aee61b8a21297965")},
+                {1, uint256S("0x66665c474577a79bc41db0d21a33f83230496e955d6c7e0fc2af87353b7594f7")},
+             //   {2, uint256S("0x2affd5188cc2c3d037d82b20b6a24557bcde03730b3b976fe2baa54c10e90cc1")},
+              //  {3, uint256S("0x2462f53ef5053457e7800a579e25c223254afe5bd008e83852a41d3e46dfe590")},
             }
         };
 
         chainTxData = ChainTxData{
-            // Data as of block 3351b6229da00b47ad7a8d7e1323b0e2874744b5296e3d6448293463ab758624 (height 153489)
-            1515510596,
-            1,
-            .6,
+            // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
+            1517308890, // * UNIX timestamp of last known number of transactions
+            3,  // * total number of transactions between genesis and that timestamp
+           //         //   (the tx=... number in the SetBestChain debug.log lines)
+            0.06     // * estimated number of transactions per second after that timestamp
         };
-
     }
 };
 
@@ -307,13 +310,13 @@ public:
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1515510596, 0, 0x207fffff, 1, 1 * COIN);
+        genesis = CreateGenesisBlock(1517349586, 508020, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         printf("block.nTime = %u \n", genesis.nTime);
         printf("block.nNonce = %u \n", genesis.nNonce);
         printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());        
-        assert(consensus.hashGenesisBlock == uint256S("0xd4f4560a0cfb52f50bcf2eee05bd5f188b5f6ab41a941a843e7e1e3cf13a14bf"));
-        assert(genesis.hashMerkleRoot == uint256S("0x8c40f6074db849d17209a6ac1f72ac7e9eef05b34ad6839ddf441d46ebb8dde3"));
+        assert(consensus.hashGenesisBlock == uint256S("0xa675daf66a47e5b0e29d946f94e665f9f75a895622e0211772785fce74d52322"));
+        assert(genesis.hashMerkleRoot == uint256S("0x2384bee07171436de6fc89e944dccc31d94c9fb7fd459e05eb3ce646e4dac927"));
      //   assert(genesis.hashMerkleRoot == uint256S("0x"));
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -324,14 +327,19 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {0, uint256S("0x6b6153c36688f4bf9cc71af18c3d1ac25656d24fc527da364c996d1d815b3e1c")},
+                {0, uint256S("0xa6a212c6f905f89f07072de3b01bf83f8442ea06387d35a1aee61b8a21297965")},
+                {1, uint256S("0x66665c474577a79bc41db0d21a33f83230496e955d6c7e0fc2af87353b7594f7")},
+                //{2, uint256S("0x2affd5188cc2c3d037d82b20b6a24557bcde03730b3b976fe2baa54c10e90cc1")},
+                //{3, uint256S("0x2462f53ef5053457e7800a579e25c223254afe5bd008e83852a41d3e46dfe590")},
             }
         };
 
         chainTxData = ChainTxData{
-            1515510596,
-            0,
-            .6,
+            // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
+            1517308890, // * UNIX timestamp of last known number of transactions
+            3,  // * total number of transactions between genesis and that timestamp
+           //         //   (the tx=... number in the SetBestChain debug.log lines)
+            0.06     // * estimated number of transactions per second after that timestamp
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);

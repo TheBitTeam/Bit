@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-key_tests.o: test/key_tests.cpp key.h pubkey.h \
+test/test_test_bit-key_tests.o: test/key_tests.cpp key.h pubkey.h \
   hash.h crypto/ripemd160.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-amount_tests.o: test/amount_tests.cpp amount.h \
+test/test_test_bit-amount_tests.o: test/amount_tests.cpp amount.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdint.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include/stdint.h \

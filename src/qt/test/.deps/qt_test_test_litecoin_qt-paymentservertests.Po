@@ -1,4 +1,4 @@
-qt/test/qt_test_test_bitcoin2_qt-paymentservertests.o: \
+qt/test/qt_test_test_bit_qt-paymentservertests.o: \
   qt/test/paymentservertests.cpp qt/test/paymentservertests.h \
   qt/test/../paymentserver.h qt/paymentrequestplus.h \
   qt/paymentrequest.pb.h \

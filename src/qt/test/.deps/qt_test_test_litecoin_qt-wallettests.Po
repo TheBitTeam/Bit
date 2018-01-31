@@ -1,4 +1,4 @@
-qt/test/qt_test_test_bitcoin2_qt-wallettests.o: qt/test/wallettests.cpp \
+qt/test/qt_test_test_bit_qt-wallettests.o: qt/test/wallettests.cpp \
   qt/test/wallettests.h \
   /usr/local/Cellar/qt/5.10.0_1/include/QtCore/QObject \
   /usr/local/Cellar/qt/5.10.0_1/include/QtCore/qobject.h \

@@ -130,8 +130,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin2 address</source>
-        <translation>Пошаљите новац на bitcoin2 адресу</translation>
+        <source>Send coins to a Bit address</source>
+        <translation>Пошаљите новац на bit адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

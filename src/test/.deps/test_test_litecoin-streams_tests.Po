@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-streams_tests.o: test/streams_tests.cpp streams.h \
+test/test_test_bit-streams_tests.o: test/streams_tests.cpp streams.h \
   support/allocators/zeroafterfree.h support/cleanse.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

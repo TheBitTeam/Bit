@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-reverselock_tests.o: test/reverselock_tests.cpp \
+test/test_test_bit-reverselock_tests.o: test/reverselock_tests.cpp \
   reverselock.h test/test_bitcoin.h chainparamsbase.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

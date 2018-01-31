@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-policyestimator_tests.o: \
+test/test_test_bit-policyestimator_tests.o: \
   test/policyestimator_tests.cpp policy/policy.h consensus/consensus.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/stdlib.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \

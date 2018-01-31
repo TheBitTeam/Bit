@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-netbase_tests.o: test/netbase_tests.cpp netbase.h \
+test/test_test_bit-netbase_tests.o: test/netbase_tests.cpp netbase.h \
   config/bitcoin-config.h compat.h /usr/include/sys/fcntl.h \
   /usr/include/sys/_types.h /usr/include/sys/cdefs.h \
   /usr/include/sys/_symbol_aliasing.h \

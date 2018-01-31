@@ -1,4 +1,4 @@
-wallet/test/test_test_bitcoin2-wallet_test_fixture.o: \
+wallet/test/test_test_bit-wallet_test_fixture.o: \
   wallet/test/wallet_test_fixture.cpp wallet/test/wallet_test_fixture.h \
   test/test_bitcoin.h chainparamsbase.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory \

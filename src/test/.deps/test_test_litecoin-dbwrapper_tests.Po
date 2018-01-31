@@ -1,4 +1,4 @@
-test/test_test_bitcoin2-dbwrapper_tests.o: test/dbwrapper_tests.cpp \
+test/test_test_bit-dbwrapper_tests.o: test/dbwrapper_tests.cpp \
   dbwrapper.h clientversion.h config/bitcoin-config.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config \
