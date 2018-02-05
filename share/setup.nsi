@@ -10,11 +10,11 @@ SetCompressor /SOLID lzma
 !define URL https://bit.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/Users/LitGucciLuci/Desktop/Bit-master/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/Users/LitGucciLuci/Desktop/Bit-master/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/Users/LitGucciLuci/Desktop/Bit-master/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "Bit Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\bit-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/Users/LitGucciLuci/Desktop/Bit-master/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/bit-${VERSION}-win-setup.exe
+OutFile /Users/LitGucciLuci/Desktop/Bit-master/bit-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Bit
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/release/bit-qt
-    File /oname=COPYING.txt /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/COPYING
-    File /oname=readme.txt /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/doc/README_windows.txt
+    File /Users/LitGucciLuci/Desktop/Bit-master/release/bit-qt
+    File /oname=COPYING.txt /Users/LitGucciLuci/Desktop/Bit-master/COPYING
+    File /oname=readme.txt /Users/LitGucciLuci/Desktop/Bit-master/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/release/bitd
-    File /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/release/bit-cli
+    File /Users/LitGucciLuci/Desktop/Bit-master/release/bitd
+    File /Users/LitGucciLuci/Desktop/Bit-master/release/bit-cli
     SetOutPath $INSTDIR\doc
-    File /r /Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/doc\*.*
+    File /r /Users/LitGucciLuci/Desktop/Bit-master/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

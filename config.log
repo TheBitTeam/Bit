@@ -30,8 +30,8 @@ Kernel configured for up to 4 processors.
 Processor type: x86_64h (Intel x86-64h Haswell)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 284 tasks, 1400 threads, 4 processors
-Load average: 6.17, Mach factor: 1.30
+Default processor set: 299 tasks, 1438 threads, 4 processors
+Load average: 2.10, Mach factor: 2.15
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
@@ -179,7 +179,6 @@ configure:5062: $? = 0
 configure:5103: result: yes
 configure:5128: checking dependency style of g++ -std=c++11
 configure:5237: result: gcc3
-configure:5256: WARNING: Libtool does not cope well with whitespace in `pwd`
 configure:5300: checking how to print strings
 configure:5327: result: printf
 configure:5396: checking for gcc
@@ -246,7 +245,7 @@ configure:6668: checking the name lister (/usr/bin/nm -B) interface
 configure:6675: gcc -c -g -O2  conftest.c >&5
 configure:6678: /usr/bin/nm -B "conftest.o"
 configure:6681: output
-00000000000001fc S _some_variable
+00000000000001d4 S _some_variable
 configure:6688: result: BSD nm
 configure:6691: checking whether ln -s works
 configure:6695: result: yes
@@ -4443,9 +4442,9 @@ config.status:1409: creating src/config/bitcoin-config.h
 config.status:1590: src/config/bitcoin-config.h is unchanged
 config.status:1669: executing depfiles commands
 config.status:1669: executing libtool commands
-configure:33413: === configuring in src/univalue (/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/src/univalue)
+configure:33413: === configuring in src/univalue (/Users/LitGucciLuci/Desktop/Bit-master/src/univalue)
 configure:33476: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--disable-shared' '--with-pic' '--with-bignum=no' '--enable-module-recovery' '--disable-jni' --cache-file=/dev/null --srcdir=.
-configure:33413: === configuring in src/secp256k1 (/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/src/secp256k1)
+configure:33413: === configuring in src/secp256k1 (/Users/LitGucciLuci/Desktop/Bit-master/src/secp256k1)
 configure:33476: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--disable-shared' '--with-pic' '--with-bignum=no' '--enable-module-recovery' '--disable-jni' --cache-file=/dev/null --srcdir=.
 
 ## ---------------- ##
@@ -4773,7 +4772,7 @@ pkg_cv_SSL_LIBS='-L/usr/local/Cellar/openssl/1.0.2n/lib -lssl'
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" aclocal-1.15'
+ACLOCAL='${SHELL} /Users/LitGucciLuci/Desktop/Bit-master/build-aux/missing aclocal-1.15'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -4784,9 +4783,9 @@ AM_DEFAULT_VERBOSITY='0'
 AM_V='$(V)'
 AR='/usr/bin/ar'
 ARFLAGS='cr'
-AUTOCONF='${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" autoconf'
-AUTOHEADER='${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" autoheader'
-AUTOMAKE='${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" automake-1.15'
+AUTOCONF='${SHELL} /Users/LitGucciLuci/Desktop/Bit-master/build-aux/missing autoconf'
+AUTOHEADER='${SHELL} /Users/LitGucciLuci/Desktop/Bit-master/build-aux/missing autoheader'
+AUTOMAKE='${SHELL} /Users/LitGucciLuci/Desktop/Bit-master/build-aux/missing automake-1.15'
 AWK='awk'
 BDB_CFLAGS=''
 BDB_CPPFLAGS=' -I/opt/local/include/db48/'
@@ -4916,7 +4915,7 @@ LUPDATE='/usr/local/Cellar/qt/5.10.0_1/bin/lupdate'
 MAINT=''
 MAINTAINER_MODE_FALSE='#'
 MAINTAINER_MODE_TRUE=''
-MAKEINFO='${SHELL} "/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/missing" makeinfo'
+MAKEINFO='${SHELL} /Users/LitGucciLuci/Desktop/Bit-master/build-aux/missing makeinfo'
 MAKENSIS=''
 MANIFEST_TOOL=':'
 MINIUPNPC_CPPFLAGS=''
@@ -5058,7 +5057,7 @@ host_vendor='apple'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} '\''/Users/LitGucciLuci/Desktop/Interblock LLC/Bailey Stockdale Project/Bit_source/build-aux/install-sh'\'''
+install_sh='${SHELL} /Users/LitGucciLuci/Desktop/Bit-master/build-aux/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
