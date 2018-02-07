@@ -24,13 +24,7 @@ Installation Process
 Installation of Bit requires following the corresponding "build" text at
 https://github.com/litecoin-project/litecoin/tree/master/doc
 
-After the build is done compiling, go into -datadir and create a text file bit.conf containing the line:
-
-addnode=34.239.199.122:40333
-
-Linux datadir = ~/.bit
-OSX datadir = ~/Library/Application Support/Bit
-Windows datadir = C:\Users\YourUserName\Appdata\Roaming\Bitcoin
+WINDOWS INSTALLATION: Run the setup.bat file included in the package before building or using the Windows Bit executable
 
 Then run src/qt/bit-qt, hide synchronization window if it pops up, click Help > Debug window > Console and begin mining.
 
