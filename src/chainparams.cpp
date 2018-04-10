@@ -26,10 +26,10 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
     CBlock genesis;
     genesis.nTime    = nTime;
-    genesis.nTime    = 1517772011;
+    genesis.nTime    = 1521659215;
     genesis.nBits    = nBits;
     genesis.nNonce   = nNonce;    
-    genesis.nNonce   = 829555;
+    genesis.nNonce   = 208009751;
     genesis.nVersion = nVersion;
     genesis.vtx.push_back(MakeTransactionRef(std::move(txNew)));
     genesis.hashPrevBlock.SetNull();
@@ -39,7 +39,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
     return genesis;
 
-}
+}  
 
 
 
@@ -56,7 +56,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Amtrak train crash kills 2. - Feb 4 2018";
+    const char* pszTimestamp = "Austin bombing suspect Mark Conditt dies after blowing himself up - March 21 2018";
     const CScript genesisOutputScript = CScript() << ParseHex("040183310fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -88,8 +88,8 @@ public:
         consensus.BIP65Height = 918684; // bab3041e8977e0dc3eeff63fe707b92bde1dd449d8efafb248c27c8264cc311a
         consensus.BIP66Height = 811879; // 7aceee012833fa8952f8835d8b1b3ae233cd6ab08fdb27a771d2bd7bdc491894
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
-        consensus.nPowTargetTimespan =  120 * 30; // 5 hours
-        consensus.nPowTargetSpacing = 60 * 30;
+        consensus.nPowTargetTimespan =  60 * 30; // 5 hours
+        consensus.nPowTargetSpacing = 20 * 30;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
@@ -123,10 +123,10 @@ public:
         pchMessageStart[1] = 0x5a;
         pchMessageStart[2] = 0xe1;
         pchMessageStart[3] = 0x1a;
-        nDefaultPort = 40333;
+        nDefaultPort = 30336;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1517772011, 829555, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1521659215, 208009751, 0x1e0ffff0, 1, 50 * COIN);
 // you already know what this is about custom code until next comment
 
     //    vSeeds.emplace_back("18.220.75.6", true);
@@ -137,11 +137,12 @@ public:
      //   printf("block.nTime = %u \n", genesis.nTime);
        // printf("block.nNonce = %u \n", genesis.nNonce);
         printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        assert(consensus.hashGenesisBlock == uint256S("0xaf454c81fb9d98c1963d36494492cbe2930c96f856fb8f771e9ead68e687f849"));
-        assert(genesis.hashMerkleRoot == uint256S("0x131ac23de7bf49cd13f02ebe257c932fcbb7ec6e1c2d94f706094f09e1c6e7eb"));
+        assert(consensus.hashGenesisBlock == uint256S("0xb8de8da52b97e86d2ce0e8f40361726551f2e69bef7ca65e69a6d9f0d044ffe7"));
+        assert(genesis.hashMerkleRoot == uint256S("0x80c4ca431aa617aedd3accbe18e4cfa29a67cc3534647162026efc810d72e803"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -158,16 +159,16 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {1, uint256S("0xe769b13858cf097abefc695690e81d989cadb29ea48f46adf0a3a8432e1bb65f")},
-                {2, uint256S("0xa9bfdc9fa981a6bb3cedf81d48d0a5b10d4a5f6295dd93cd35d91948d458e319")},
+                {1, uint256S("0x2fd5eba77a8f0bc364c3609df3bebe1157172beb73ccd51732adbb2c7372c1fc")},
+                {5, uint256S("0x39eb668e6f82b03587bc1922e440795f20e4225af46439ecf5b64cf3592cabb3")},
              //   {2, uint256S("0x33eff54c8fe0122550c7026d74e941cac61d2b5f2da63aac80c062ec9d9bcf99")},
             }
         };
 
         chainTxData = ChainTxData{
-            // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
-            1517780695, // * UNIX timestamp of last known number of transactions
-            3,  // * total number of transactions between genesis and that timestamp
+            // Data as of block 39eb668e6f82b03587bc1922e440795f20e4225af46439ecf5b64cf3592cabb3 (height 5).
+            1522200573, // * UNIX timestamp of last known number of transactions
+            6,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
             0.06     // * estimated number of transactions per second after that timestamp
         };
@@ -220,21 +221,21 @@ public:
         nDefaultPort = 19335;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517772011, 829555, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1521659215, 208009751, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
      //   printf("block.nTime = %u \n", genesis.nTime);
       //  printf("block.nNonce = %u \n", genesis.nNonce);
       //  printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());        
-        assert(consensus.hashGenesisBlock == uint256S("0xaf454c81fb9d98c1963d36494492cbe2930c96f856fb8f771e9ead68e687f849"));
+        assert(consensus.hashGenesisBlock == uint256S("0xb8de8da52b97e86d2ce0e8f40361726551f2e69bef7ca65e69a6d9f0d044ffe7"));
           
-        assert(genesis.hashMerkleRoot == uint256S("0x131ac23de7bf49cd13f02ebe257c932fcbb7ec6e1c2d94f706094f09e1c6e7eb"));
+        assert(genesis.hashMerkleRoot == uint256S("0x80c4ca431aa617aedd3accbe18e4cfa29a67cc3534647162026efc810d72e803"));
         //assert(genesis.hashMerkleRoot == uint256S("0x"));
        // vFixedSeeds.clear();
         //vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.bittools.com", true);
-        vSeeds.emplace_back("seed-b.bit.loshan.co.uk", true);
-        vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
+    //    vSeeds.emplace_back("testnet-seed.bittools.com", true);
+      //  vSeeds.emplace_back("seed-b.bit.loshan.co.uk", true);
+       // vSeeds.emplace_back("dnsseed-testnet.thrasher.io", true);
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -251,18 +252,18 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {1, uint256S("0xe769b13858cf097abefc695690e81d989cadb29ea48f46adf0a3a8432e1bb65f")},
-                {2, uint256S("0xa9bfdc9fa981a6bb3cedf81d48d0a5b10d4a5f6295dd93cd35d91948d458e319")},
+                {1, uint256S("0x")},
+               // {2, uint256S("0xa9bfdc9fa981a6bb3cedf81d48d0a5b10d4a5f6295dd93cd35d91948d458e319")},
              //   {2, uint256S("0x33eff54c8fe0122550c7026d74e941cac61d2b5f2da63aac80c062ec9d9bcf99")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
-            1517780695, // * UNIX timestamp of last known number of transactions
-            3,  // * total number of transactions between genesis and that timestamp
+       //     1517780695, // * UNIX timestamp of last known number of transactions
+         //   3,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            0.06     // * estimated number of transactions per second after that timestamp
+           // 0.06     // * estimated number of transactions per second after that timestamp
         };
 
     }
@@ -310,13 +311,13 @@ public:
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517772011, 829555, 0x207fffff, 1, 1 * COIN);
+        genesis = CreateGenesisBlock(1521659215, 208009751, 0x207fffff, 1, 1 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         printf("block.nTime = %u \n", genesis.nTime);
         printf("block.nNonce = %u \n", genesis.nNonce);
         printf("block.GetHash = %s\n", genesis.GetHash().ToString().c_str());        
         assert(consensus.hashGenesisBlock == uint256S("0xd4f4560a0cfb52f50bcf2eee05bd5f188b5f6ab41a941a843e7e1e3cf13a14bf"));
-        assert(genesis.hashMerkleRoot == uint256S("0x131ac23de7bf49cd13f02ebe257c932fcbb7ec6e1c2d94f706094f09e1c6e7eb"));
+        assert(genesis.hashMerkleRoot == uint256S("0x80c4ca431aa617aedd3accbe18e4cfa29a67cc3534647162026efc810d72e803"));
      //   assert(genesis.hashMerkleRoot == uint256S("0x"));
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -327,18 +328,18 @@ public:
 
         checkpointData = (CCheckpointData) {
             {
-                {1, uint256S("0xe769b13858cf097abefc695690e81d989cadb29ea48f46adf0a3a8432e1bb65f")},
-                {2, uint256S("0xa9bfdc9fa981a6bb3cedf81d48d0a5b10d4a5f6295dd93cd35d91948d458e319")},
+                {1, uint256S("0x")},
+          //      {2, uint256S("0xa9bfdc9fa981a6bb3cedf81d48d0a5b10d4a5f6295dd93cd35d91948d458e319")},
              //   {2, uint256S("0x33eff54c8fe0122550c7026d74e941cac61d2b5f2da63aac80c062ec9d9bcf99")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data as of block db42d00d824950a125f9b08b6b6c282c484781562fa8b3bd29d6ce4a2627c348 (height 1259851).
-            1517780695, // * UNIX timestamp of last known number of transactions
-            3,  // * total number of transactions between genesis and that timestamp
+       //     1517780695, // * UNIX timestamp of last known number of transactions
+         //   3,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-            0.06     // * estimated number of transactions per second after that timestamp
+           // 0.06     // * estimated number of transactions per second after that timestamp
         };
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
